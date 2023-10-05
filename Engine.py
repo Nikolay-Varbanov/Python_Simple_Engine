@@ -1,4 +1,5 @@
 # python imports
+from enum import Enum
 
 # globals
 #user defined classes
@@ -16,6 +17,11 @@ global rawInput
 rawInput: str
 global output
 output: str
+
+# Classes
+# Command list Enum
+class EngineCommands(Enum):
+	EXIT = "\exit"
 
 def Initate():
 
@@ -51,12 +57,15 @@ def Execute():
 	
 	output = rawInput
 	
-	match rawInput:
-		case "exit":
-			print("Engine Command for exit detected")
-			isRunning = False	
-		case _:
-			print("No Engine Command detected")
+	#print(EngineCommands(rawInput))
+	if(rawInput in EngineCommands._value2member_map_):
+		match EngineCommands(rawInput):
+			case EngineCommands.EXIT:
+				print("Engine Command for exit detected")
+				isRunning = False	
+	else: # if it is not an engine command pass to app logiv
+		print("No Engine Command detected")
+		# App Logic comes here
 
 def Clean_Up():
 

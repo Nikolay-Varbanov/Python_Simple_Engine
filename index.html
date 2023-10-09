@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="Nikolay Varbanov">
+<meta name="publisher" content="Nikolay Varbanov">
+<meta name="copyright" content="Nikolay Varbanov">
+<!-- Beschreibung der Seite -->
+<meta name="description" content="Portfolio Presentation Site">
+<!-- Marketing Keywords -->
+<meta name="keywords" content="Portfolio, programming">
+<!-- Google-Robots zur Indexierung (Webcrawling) -->
+<meta name="robots" content="index, follow"> <!-- Google darf die Seite indexieren -->
+<title>Nikolay Varbanov</title>
+<link rel="stylesheet" href="Gallery.css" />
+</head>
+<body>
+<header>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*	{
+  box-sizing: border-box;
+	//color: #00FF41;
+	color: #e5e5e5;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	background-color: #051923;
+}
+
+/* Style the header */
+header {
+  //background-color: #666;
+  background-color: #212529;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  //color: white;
+}
+/* Dataprotection Impressum center to be removed */
+#Impressum_Dataprotection_Links {
+	text-align: center;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  //background: #ccc;
+	background-color: #051923;
+	font-size: 25px;
+	height: 800px;
+	hight: auto;
+	padding: 20px;
+	overflow-y:scroll;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+}
+
+article {
+	float: left;
+  width: 70%;
+	height: 800px;
+  //background-color: #f1f1f1;
+  background-color: #051923;
+	font-size: 25px;
+	padding: 30px;
+	overflow-y:scroll;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  //background-color: #777;
+  background-color: #212529;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+	<h1>Welcome to Nikolay Varbanov's Home page</h1>
+	<p>Currently under construction</p>
+	<section id="Impressum_Dataprotection_Links">
+		<!-- If you need Impressum or Dataprotections -->
+	</section>
+</header>
+<section>
+	<nav>
+		<ul>
+			<a href="#Home">Home</a></br>
+			<a href="#Problem1">Terminal Engine</a></br>
+		</ul>
+	</nav>
+	<article>
+		<section id="mandatory_content">
+			<!-- Content comes here -->
+		</section > <!-- end of mandatory_content Section -->
+	</article>
+</section>
+<footer>
+	<h1>Footer content text</h1>
+</footer>
+</body>
+</html> 
